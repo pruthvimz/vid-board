@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 import { BrowserRouter, Link, Route } from "react-router-dom";
 //import { browserHistory } from "react-router";
 
+import "react-input-range/lib/css/index.css";
 //import "!style-loader!css-loader!react-input-range/lib/css/index.css";
 import Saparator from "./container/Saparator";
 
