@@ -115,7 +115,7 @@ export default class FlLogin extends React.Component {
     return (      
         <div id="flLoginDiv">
           <GoogleLogin
-            clientId="810373962823-klals5rlg3ludokkj4m449208q25fobg.apps.googleusercontent.com"
+            clientId="810373962823-sl3hgiutuefcemik07aighoom6rve9ej.apps.googleusercontent.com"
             buttonText="Login with Google"
             onSuccess={this.onSignIn}
             onFailure={this.responseGoogle}
