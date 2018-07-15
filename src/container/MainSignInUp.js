@@ -47,7 +47,7 @@ class MainSignInUp extends React.Component {
     let backendHost;
 
     console.log("hostname : "+hostname)
-    if(hostname === 'https://vid-board.herokuapp.com') {
+    if(hostname.indexOf('vid-board.herokuapp.com') > 0) {
       backendHost = 'https://vid-board-backend.herokuapp.com';
     } else {
       backendHost = process.env.REACT_APP_LOCAL_BACKEND || 'http://localhost:8080';
