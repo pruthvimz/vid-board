@@ -46,6 +46,7 @@ class MainSignInUp extends React.Component {
 
     let backendHost;
 
+    console.log("hostname : "+hostname)
     if(hostname === 'https://vid-board.herokuapp.com') {
       backendHost = 'https://vid-board-backend.herokuapp.com';
     } else {
@@ -54,7 +55,7 @@ class MainSignInUp extends React.Component {
 
 //    export const BACKEND = `${backendHost}`;
     localStorage.setItem('BACKEND_HOST',backendHost)
-//    console.log("BACKEND_HOST : ",localStorage.getItem("BACKEND_HOST"))
+    console.log("BACKEND_HOST : ",localStorage.getItem("BACKEND_HOST"))
   }
 
   show = from => {
