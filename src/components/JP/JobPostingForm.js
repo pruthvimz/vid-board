@@ -59,7 +59,8 @@ class JobPostingForm extends React.Component {
 
     this.handleText = this.handleText.bind(this);
     this.handleSwitch = this.handleSwitch.bind(this);
-
+    
+    this.handleRedirect = this.handleRedirect.bind(this);
     this.doOnSubmit = this.doOnSubmit.bind(this);
   }
   componentDidMount() {
@@ -139,11 +140,19 @@ class JobPostingForm extends React.Component {
       if (xhttp.readyState == 4 && xhttp.status == 200) {
         let jsonResponse = JSON.parse(xhttp.responseText);
         console.log(jsonResponse);
+        this.handleRedirect("/JpDashboard", null);
       }
     }.bind(this);
     xhttp.send(JSON.stringify(data));
   };
 
+  handleRedirect = (pathname, state) => {
+    this.props.history.push({
+      pathname: pathname,
+      state: state
+    });
+  };
+  
   render() {
     const { country, region } = this.state;
     const { classes } = this.props;

@@ -54,7 +54,7 @@ class FlDashboard extends React.Component {
       equipment: false,
       accommodation: false,
       preferLocal: false,
-
+      errorMessage:"",
       counter: 0,
       jobPostsData: [],
 
@@ -294,18 +294,14 @@ class FlDashboard extends React.Component {
                   onChange={(val) => this.selectRegion(val)} /><br/><br/><br/>
           </div> ):null*/}
 
-                  <button
-                    onClick={
-                      errorMessage && errorMessage == ""
-                        ? this.doOnSubmit
-                        : null
-                    }
-                    disable="true"
-                  >
-                    {" "}
-                    Submit{" "}
-                  </button>
-              </form>
+                {
+                errorMessage == "" ? (
+                <button onClick={this.doOnSubmit}>                    
+                    Search
+                  </button>        
+                ) : null
+               }                               
+                </form>
 
               <div id="flJobSearchList">                
                   <RenderJobPosts

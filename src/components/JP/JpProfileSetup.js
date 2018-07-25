@@ -149,7 +149,7 @@ class JpProfileSetup extends React.Component {
         let jsonResponse = JSON.parse(xhttp.responseText);
         console.log(jsonResponse);
         let state = { email: this.state.email };
-        this.handleRedirect("/JobPosterDashboard", state);
+        this.handleRedirect("/JpDashboard", state);
       }
     }.bind(this);
     xhttp.send(JSON.stringify(data));
