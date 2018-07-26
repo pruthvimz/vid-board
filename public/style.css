@@ -3,6 +3,35 @@
     width:100%;
 }
 
+@keyframes loading {
+    from {left: -200px; width: 30%;}
+    50% {width: 30%;}
+    70% {width: 70%;}
+    80% { left: 50%;}
+    95% {left: 120%;}
+    to {left: 100%;}
+}
+
+.loading{
+// min-height: 90vh;
+}
+
+.loader:before{
+  display: block;
+  position: absolute;
+  content: "";
+  left: -200px;
+  width: 200px;
+  height: 4px;
+  background-color: #2980b9;
+  animation: loading 2s linear infinite;
+}
+
+.loadH1{
+  text-align: center;
+  padding: 5rem 0;
+}
+
 .work_textarea {
     background-attachment: local;
     background-image:
@@ -141,4 +170,62 @@ body input[type="submit"]:hover {
 }
 #jpProfileForm a:hover {
     color: #000;
+}
+
+div#flLoginDiv {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    background-color: #fff;
+}
+#flLoginDiv button {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    height: 40px;
+    z-index: 1;
+    cursor: pointer;
+}
+body {
+    overflow-x: hidden;
+}
+body .MuiSnackbarContent-root-160 {
+    max-width: 100%;
+    border-radius: 0;
+}
+body .MuiGrid-spacing-xs-24-87 > #jpProfileViewGrid {
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,.1);
+    border-radius: 10px;
+}
+.MuiGrid-spacing-xs-24-87 > #jpDashboardGrid {
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    max-width: 60.66667%;
+    margin-left: 6%;
+}
+body .JpProfile-card-305 {
+    max-width: 100%;
+    box-shadow: none;
+    border: 1px solid #ccc;
+}
+body .JobPost-card-318 {
+    max-width: 100%;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    margin-top: 30px;
+}
+div#jpDashboardMainGrid {
+    padding: 50px 15px;
 }

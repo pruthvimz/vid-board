@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import JpSignUpIn from "./JpSignUpIn";
 import Auth from "./../../server/auth/authUserCheck";
 import { BrowserRouter as Router, Link, Route } from "react-router-dom";
+import Loading from "../../container/Loading";
 
 export default class JpLogin extends React.Component {
   constructor(props, context) {
@@ -29,7 +30,8 @@ export default class JpLogin extends React.Component {
         email: "",
         password: "",
         confirmPwd: ""
-      }
+      },
+      loading:false,
     };
 
     //    this.processForm = this.processForm.bind(this);
@@ -89,6 +91,7 @@ export default class JpLogin extends React.Component {
 
   doSignUp = e => {
     e.preventDefault();
+    this.setState({loading: true})
     let email = this.state.user.email;
     let password = this.state.user.password;
     let confirmPwd = this.state.user.confirmPwd;
@@ -130,6 +133,7 @@ export default class JpLogin extends React.Component {
           errors: response.errors,
           message: response.message
         });
+        this.setState({loading: false})
       }
     });
 
@@ -139,6 +143,7 @@ export default class JpLogin extends React.Component {
   doSignIn = e => {
     e.preventDefault();
     console.log("in do Sign In");
+    this.setState({loading: true})
     let url = localStorage.getItem("BACKEND_HOST")+"/auth/login";
     let restMethod = "POST";
     let async = true;
@@ -188,6 +193,7 @@ export default class JpLogin extends React.Component {
           errors: response.errors,
           message: response.message
         });
+        this.setState({loading: false})
       }
     });
 
@@ -217,6 +223,8 @@ export default class JpLogin extends React.Component {
   };
 
   render() {
+    if(this.state.loading)
+        return <Loading />
     return (
         <div id="jpLoginMainDiv">
           <JpSignUpIn

@@ -5,6 +5,9 @@ import PropTypes from "prop-types";
 import Auth from "../../server/auth/authUserCheck";
 import GoogleLogin from "react-google-login";
 import GoogleLogout from "react-google-login";
+import Loading from "../../container/Loading";
+import Dialog from "@material-ui/core/Dialog";
+import DialogContent from "@material-ui/core/DialogContent";
 
 export default class FlLogin extends React.Component {
   constructor(props, context) {
@@ -20,7 +23,8 @@ export default class FlLogin extends React.Component {
 
     this.state = {
       errors: "",
-      successMessage
+      successMessage,
+      loading: false
     };
 
     this.onSignIn = this.onSignIn.bind(this);
@@ -40,6 +44,7 @@ export default class FlLogin extends React.Component {
 
   onSignIn = googleUser => {
     console.log("on Sign In");
+    this.setState({loading: true})
     let profile = googleUser.getBasicProfile();
     let id_token = googleUser.getAuthResponse().id_token;
     let email = profile.getEmail();
@@ -87,6 +92,7 @@ export default class FlLogin extends React.Component {
           errors
         });
         console.log(this.state.errors);
+        this.setState({loading: false})
       }
     });
 
@@ -110,8 +116,21 @@ export default class FlLogin extends React.Component {
     console.log(response);
   };
 
+  handleClose = () => {
+    this.setState({ loading: false });
+  };
+  
   render() {
-    //            let {data-onsuccess} = this.props;
+    if(this.state.loading)
+        return <Dialog open={this.state.loading}
+                onClose={this.handleClose}
+                aria-labelledby="alert-dialog-title"
+                aria-describedby="alert-dialog-description"
+              >
+                <DialogContent>
+                  <Loading />
+                </DialogContent>
+              </Dialog>
     return (      
         <div id="flLoginDiv">
           <GoogleLogin
