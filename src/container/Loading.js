@@ -1,8 +1,14 @@
 import React from 'react'
 
 const  Loading = () => (
-    <div className="loading">
-            <h1 className="loadH1">Loading...</h1>
+    <div className="loder_wrap">
+        <ul className="cssload-flex-container">
+            <li>
+                <span className="cssload-loading cssload-one"></span>
+                <span className="cssload-loading cssload-two"></span>
+                <span className="cssload-loading-center"></span>
+            </li>
+        </ul>
     </div>
 )
 

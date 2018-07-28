@@ -1,0 +1,15 @@
+@media only screen and (max-width: 767px) {
+
+    body #mainSignInUpGrid .btnJp, body #mainSignInUpGrid .btnFl {
+        height: auto;
+        margin: auto;
+        font-size: 16px;
+        width: 30%;
+        padding: 15px;
+        min-height: 68px;
+    }
+    div + header h2 {
+        font-size: 13px !important;
+    }
+
+}
