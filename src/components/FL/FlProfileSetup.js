@@ -231,9 +231,8 @@ class FlProfileSetup extends React.Component {
                   placeholder="Enter Name"
                   onChange={this.handleText("name")}
                   margin="normal"
-                />
-                <br />
-                <br />
+                />                
+                
                 <TextField
                   disabled
                   id="email"
@@ -244,22 +243,19 @@ class FlProfileSetup extends React.Component {
                   onChange={this.handleText("email")}
                   margin="normal"
                 />
-                <br />
-                <br />
+                                
                 <input
                   id="inputFile"
                   type="file"
                   onChange={this.handleUploadFile}
-                />
-                <br />
-                <br />
+                />                
+                
                 <RegionDropdown
                   country={country}
                   value={location}
                   onChange={val => this.selectRegion(val)}
                 />
-                <br />
-                <br />
+                                
                 <FormControlLabel
                   control={
                     <Switch
@@ -270,7 +266,7 @@ class FlProfileSetup extends React.Component {
                   }
                   label="Willing to travel for jobs?"
                 />
-                <br />
+                
                 <TextField
                   id="video"
                   label="Video link"
@@ -280,7 +276,7 @@ class FlProfileSetup extends React.Component {
                   onChange={this.handleText("video")}
                   margin="normal"
                 />
-                <br />                
+                                
               </Grid>
               <Grid item xs={4} id="flAddProfileGrid">
                 <input
@@ -291,9 +287,7 @@ class FlProfileSetup extends React.Component {
                   pattern="^#"
                   placeholder="+ Add Skills"
                 />
-                <br />
-                <br />
-
+                                
                 <textarea
                   className="work_textarea"
                   value={this.state.work}

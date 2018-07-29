@@ -101,13 +101,13 @@ class MainSignInUp extends React.Component {
         
         <Grid container spacing={24} id="mainSignInUpMainGrid">
           <Grid item xs={12} id="mainSignInUpGrid">
-            {successMessage != 'undefined' 
+            {/*successMessage != 'undefined' 
                 && successMessage != "" ? (
                   <SnackbarContent
                     className={classes.snackbar}
                     message={successMessage}
                   />
-                ) : null}
+                ) : null*/}
             <img src="corporate.jpg" alt="Snow" />
 
             <button className="btnJp" onClick={() => this.show("Jp")}>
@@ -121,7 +121,10 @@ class MainSignInUp extends React.Component {
                 aria-describedby="alert-dialog-description"
               >
                 <DialogContent>
-                  <JpLogin />
+                    <a href="javascript:void(0)" onClick={this.handleClose}>        
+                      X
+                    </a>
+                    <JpLogin />
                 </DialogContent>
               </Dialog>
             ) : null}
@@ -140,8 +143,8 @@ class MainSignInUp extends React.Component {
               color="inherit"
               className={classes.flex}
             >
-              Copyright 2018 Vidboard. All rights reserved Email us at:
-              info@vidboard.com
+              Copyright 2018 Vidboard. All rights reserved.
+              Email us at : info@vidboard.com
             </Typography>
           </Toolbar>
         </AppBar>

@@ -137,18 +137,14 @@ class FlAddInfo extends React.Component {
             pattern="^#"
             placeholder="#hashtags"
           />
-
-          <br />
-          <br />
-
+                   
           <textarea
             className="work_textarea"
             value={this.state.work}
             onChange={this.handleText("work")}
             placeholder="work"
           />
-
-          <br />
+          
           <button onClick={this.doOnSubmit}> Save </button>
         </div>
       </Dashboard>

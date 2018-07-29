@@ -277,6 +277,7 @@ class Dashboard extends React.Component {
     const { anchor, open } = this.state;
 
     const drawer = (
+    <div id="drawerPane">
       <Drawer
         variant="persistent"
         anchor={anchor}
@@ -361,6 +362,7 @@ class Dashboard extends React.Component {
           </List>
         )}
       </Drawer>
+    </div>  
     );
 
     let before = null;
@@ -433,6 +435,19 @@ class Dashboard extends React.Component {
             <Route path = "/FlDashboard" component = {FlDashboard} />
                        */}
           </main>
+          {/*Footer
+          <AppBar position="static">
+          <Toolbar>
+            <Typography
+              variant="title"
+              color="inherit"
+              className={classes.flex}
+            >
+              Copyright 2018 Vidboard. All rights reserved.
+              Email us at : info@vidboard.com
+            </Typography>
+          </Toolbar>
+          </AppBar>*/}
           {after}
         </div>
       </div>

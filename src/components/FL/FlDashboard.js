@@ -233,22 +233,16 @@ class FlDashboard extends React.Component {
                     onChange={this.handleText("searchText")}
                     margin="normal"
                   />
-
-                  <br />
-                  <br />
-
+                                    
                   <FormHelperText>Conpensation</FormHelperText>
-                  <br />
-
+                  
                   <InputRange
                     minValue={100}
                     maxValue={1000}
                     value={this.state.budget}
                     onChange={budget => this.setState({ budget })}
                   />
-
-                  <br />
-
+                  
                   <FormControl component="fieldset">
                     <FormGroup row>
                       <FormControlLabel
@@ -284,9 +278,7 @@ class FlDashboard extends React.Component {
                       />
                     </FormGroup>
                   </FormControl>
-
-                  <br />
-
+                  
                   {/*this.state.preferLocal ? (<div>
                 <RegionDropdown
                   country={country}

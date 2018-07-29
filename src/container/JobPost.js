@@ -127,7 +127,7 @@ class JobPost extends React.Component {
                 </CardContent>
               </ExpansionPanelSummary>
               <ExpansionPanelDetails>
-                <CardContent>
+                <CardContent className="jobSearchMsg">
                   <TextField
                     id="multiline-static"
                     label="Message"
@@ -139,7 +139,7 @@ class JobPost extends React.Component {
                     margin="normal"
                   />
                 </CardContent>
-                <CardActions>
+                <CardActions className="jobSearchAction">
                   <Button
                     size="large"
                     color="primary"

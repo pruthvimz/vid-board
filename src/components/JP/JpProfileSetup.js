@@ -168,7 +168,7 @@ class JpProfileSetup extends React.Component {
 
     return (
       <Dashboard>
-        <div id="fpProfileSetupDiv">
+        <div id="jpProfileSetupDiv">
           {errorMessage && errorMessage !== "" ? (
             <SnackbarContent
               className={classes.snackbar}
@@ -185,7 +185,7 @@ class JpProfileSetup extends React.Component {
             onChange={this.handleText("name")}
             margin="normal"
           />
-          <br />
+          
           <FormControlLabel
             control={
               <Switch
@@ -207,7 +207,7 @@ class JpProfileSetup extends React.Component {
               margin="normal"
             />
           ) : null}
-          <br />
+          
           <TextField
             disabled
             id="email"
@@ -217,8 +217,7 @@ class JpProfileSetup extends React.Component {
             placeholder="abc@xyz.com"
             onChange={this.handleText("email")}
             margin="normal"
-          />
-          <br />
+          />          
 
           <FormControl component="fieldset">
             <FormLabel component="legend">
@@ -257,9 +256,7 @@ class JpProfileSetup extends React.Component {
               />
             </FormGroup>
           </FormControl>
-
-          <br />
-
+          
           <Button
             onClick={this.doOnSubmit}
             variant="contained"

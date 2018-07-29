@@ -43,13 +43,11 @@ class JobPostDetail extends React.Component {
             <Typography component="p">{jobProp.skills}</Typography>
           </ListItem>
           <ListItem>
-            <Typography component="p">
-              Equipment included? <b>{jobProp.equipment ? "Yes" : "No"}</b>
-              &nbsp; Accommodations reimbursed?{" "}
-              <b>{jobProp.accomodation ? "Yes" : "No"}</b>
-              &nbsp; Prefer a local freelancer?{" "}
-              <b>{jobProp.prefer_local ? " " + jobProp.region : "No"}</b>
-            </Typography>
+          <div>
+            <div>Equipment included? <b>{jobProp.equipment ? "Yes" : "No"}</b></div>
+            <div>Accommodations reimbursed?{" "} <b>{jobProp.accomodation ? "Yes" : "No"}</b></div>
+            <div>Prefer a local freelancer?{" "} <b>{jobProp.prefer_local ? " " + jobProp.region : "No"}</b></div>
+          </div>
           </ListItem>
         </List>
       </div>

@@ -12,4 +12,117 @@
         font-size: 13px !important;
     }
 
+    body .MuiSnackbarContent-root-160 {
+        max-width: 100%;
+        border-radius: 0;
+        padding: 0;
+    }
+    body main {
+        margin-left: -240px;
+        flex-grow: 0 !important;
+        width: 100%;
+        padding: 0 !important;
+    }
+    div #jpDashboardMainGrid,
+    #jpJobPostFormMainGrid,
+    #jpInboxMainGrid,
+    ##flDashboardMainGrid {
+        padding: 50px 15px;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+    }
+    body  #jpProfileViewGrid,
+    body .jpProfileViewGrid,
+    body .flProfileViewGrid {
+        padding: 15px !important;
+        max-width: 100%;
+        width: 100%;
+        display: block;
+        flex-basis: 100%;
+    }
+    body #jpDashboardGrid,
+    body #jpJobPostFormGrid,
+    body #jpInboxGrid,
+    body #flDashboardGrid {
+        padding: 15px;
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 50px;
+        flex-basis: 100%;
+    }
+
+    #jobPostDetailDiv li {
+        display: block;
+        padding-top: 0;
+    }
+    #jobPostDetailDiv li:last-child {
+        padding-bottom: 0;
+    }
+    #jpProfileMainDiv h2,
+    #jpDashboardGrid h2 {
+        font-size: 20px;
+    }
+    body #jobPostDetailDiv li:first-child > div {
+        padding: 15px 0 0;
+    }
+    body #jobPostDetailDiv li:first-child p {
+        text-align: left;
+        font-size: 18px;
+    }
+    #jobPostDetailDiv li:nth-child(n+2) p, 
+    #jobPostDetailDiv li:nth-child(n+2) span {
+        font-size: 16px;
+    }
+    body #jobPostMainDiv > div {
+        margin-top: 20px;
+    }
+
+    #jobPostMainDiv > div > div {
+        padding: 0;
+    }
+
+    #jpProfileSetupDiv {
+        max-width: 70%;
+    }
+
+    #jpProfileSetupDiv legend {
+        font-size: 16px;
+    }
+
+    #jpJobPostForm fieldset label,
+    .flDashboardForm fieldset label  {
+        flex-direction: row;
+        margin: 0;
+    }
+    #jpJobPostForm fieldset div,
+    .flDashboardForm fieldset div {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    #flInfoMainDiv li {
+        padding-left: 50px;
+    }
+    #flInfoMainDiv li > div:first-child {
+        position: absolute;
+        left: 0;
+        top: 12px;
+    }
+    #flInfoMainDiv li {
+        padding-left: 50px;
+        flex-wrap: wrap;
+    }
+    #flInfoMainDiv li div {
+        margin: 5px;
+    }
+    textarea.work_textarea {
+        width: 100%;
+    }
+    #flInfoMainDiv li:last-child p {
+        padding: 15px 5px;
+    }
+    #jobPostDetailDiv li > div {
+        flex-direction: column;
+    }
 }

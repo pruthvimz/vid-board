@@ -18,8 +18,10 @@ const JpSignUpIn = ({
   action
 }) => (
   <div>
-    <form action="/" onSubmit={onSubmit} id="jpProfileForm">
-      {message && message != "" ? (
+      
+    <form action="/" onSubmit={onSubmit} id="jpProfileForm">        
+      
+       {message && message != "" ? (
         <SnackbarContent message={message} />
       ) : null}
 
@@ -27,7 +29,8 @@ const JpSignUpIn = ({
         <SnackbarContent message={successMessage} />
       ) : null}
 
-      <br />
+
+      
       <TextField
         name="email"
         label="Email"
@@ -37,7 +40,7 @@ const JpSignUpIn = ({
         margin="normal"
       />
       <FormHelperText id="email-error-text">{errors.email}</FormHelperText>
-      <br />
+      
       <TextField
         type="password"
         name="password"
@@ -49,7 +52,7 @@ const JpSignUpIn = ({
       <FormHelperText id="password-error-text">
         {errors.password}
       </FormHelperText>
-      <br />
+      
       {action == "SignUp" ? (
         <div>
           <TextField
@@ -64,13 +67,10 @@ const JpSignUpIn = ({
             {errors.confirmPwd}
           </FormHelperText>
         </div>
-      ) : null}
-      <br />
+      ) : null}     
 
       <input type="submit" value={action == "SignUp" ? "Sign Up" : "Sign In"} />
-
-      <br />
-      <br />
+     
       <a href="javascript:void(0)" onClick={handleAction}>        
         Want to {action == "SignUp" ? "Sign In" : "Sign Up"}
       </a>

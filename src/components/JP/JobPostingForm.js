@@ -183,7 +183,7 @@ class JobPostingForm extends React.Component {
                   onChange={this.handleText("title")}
                   margin="normal"
                 />
-                <br />
+                
                 <TextField
                   id="multiline-static"
                   label="Description"
@@ -194,7 +194,7 @@ class JobPostingForm extends React.Component {
                   onChange={this.handleText("description")}
                   margin="normal"
                 />
-                <br />
+                
 
                 <FormHelperText>Required skills</FormHelperText>
                 <input
@@ -206,11 +206,11 @@ class JobPostingForm extends React.Component {
                   placeholder="+ Skills"
                 />
 
-                <br />
-                <br />
+                
+                
 
                 <FormHelperText>Budget</FormHelperText>
-                <br />
+                
                 <InputRange
                   minValue={100}
                   maxValue={1000}
@@ -219,7 +219,7 @@ class JobPostingForm extends React.Component {
                   onChange={budget => this.setState({ budget })}
                 />
 
-                <br />
+                
 
                 <FormControl component="fieldset">
                   <FormGroup>
@@ -257,7 +257,7 @@ class JobPostingForm extends React.Component {
                   </FormGroup>
                 </FormControl>
 
-                <br />
+                
 
                 {this.state.preferLocal ? (
                   <div>
@@ -266,9 +266,9 @@ class JobPostingForm extends React.Component {
                       value={region}
                       onChange={val => this.selectRegion(val)}
                     />
-                    <br />
-                    <br />
-                    <br />
+                    
+                    
+                    
                   </div>
                 ) : null}
 
