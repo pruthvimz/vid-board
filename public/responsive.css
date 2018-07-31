@@ -26,7 +26,8 @@
     div #jpDashboardMainGrid,
     #jpJobPostFormMainGrid,
     #jpInboxMainGrid,
-    ##flDashboardMainGrid {
+    #flInboxMainGrid,
+    #flDashboardMainGrid {
         padding: 50px 15px;
         width: 100%;
         box-sizing: border-box;
@@ -44,6 +45,7 @@
     body #jpDashboardGrid,
     body #jpJobPostFormGrid,
     body #jpInboxGrid,
+    body #flInboxGrid,
     body #flDashboardGrid {
         padding: 15px;
         max-width: 100%;
@@ -68,7 +70,7 @@
     }
     body #jobPostDetailDiv li:first-child p {
         text-align: left;
-        font-size: 18px;
+        font-size: 17px;
     }
     #jobPostDetailDiv li:nth-child(n+2) p, 
     #jobPostDetailDiv li:nth-child(n+2) span {
@@ -124,5 +126,28 @@
     }
     #jobPostDetailDiv li > div {
         flex-direction: column;
+    }
+    #flDashboardMainGrid {
+        margin: auto;
+        width: 100%;
+    }
+    .flDashboardForm > div, .flDashboardForm > p, .flDashboardForm > fieldet {
+        width: 100%;
+    }
+    .flDashboardForm {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .flDashboardForm button {
+        margin: 5px auto 0;
+    }
+    #jobPostDetailDiv li > div > div {
+        margin: 5px 0;
+    }
+    body .MuiExpansionPanelSummary-expandIcon-330 {
+        top: 25px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
     }
 }

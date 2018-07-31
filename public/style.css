@@ -218,25 +218,28 @@ header > div {
 div#jpDashboardMainGrid,
 #jpJobPostFormMainGrid,
 #jpInboxMainGrid,
+#flInboxMainGrid,
 #flDashboardMainGrid {
     padding: 50px 15px;
 }
 body  #jpProfileViewGrid,
 body .jpProfileViewGrid,
-body .flProfileViewGrid {
+body #flProfileViewGrid {
     padding: 30px !important;
-    background-color: #fff;
-    box-shadow: 0 0 5px rgba(0,0,0,.1);
+    background-cofont-sizelor: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,.4);
     border-radius: 10px;
     height: 0%;
 }
 body #jpDashboardGrid,
-body #jpJobPostFormGrid,
+body #jpJobPostFormGrid,font-size
 body #jpInboxGrid,
-body #flDashboardGrid{
+body #flInboxGrid,
+body #flDashboardGrid,
+body body #flInboxGrid {
     padding: 30px;
     background-color: #fff;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
     border-radius: 10px;
     max-width: 60.66667%;
     margin-left: 6%;
@@ -280,8 +283,9 @@ body #jobPostMainDiv > div {
 }
 body #jobPostDetailDiv li:first-child p {
     color: #000;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: right;
+    width: 100%;
 }
 /****************************** job post close  *********************/
 
@@ -295,6 +299,7 @@ body #jobPostDetailDiv li:first-child p {
     text-align: center;
     position: relative;
     min-height: 175px;
+    min-width: 130px;
 }
 
 ul.cssload-flex-container {
@@ -982,6 +987,23 @@ div[role="alertdialog"] > div {
 #flInfoMainDiv li div {
     margin-right: 15px;
 }
+#flInfoMainDiv li p {
+    width: 100%;
+    text-align: left;
+}
+body .work_textarea {
+    width: 100% !important;
+    min-height: 100px;
+    height: auto !important;
+    resize: none;
+}
+#jobPostMainDiv button,
+#flInfoMainDiv button {
+    color: green;
+    display: block;
+    width: 100%;
+    font-size: 19px;
+}
 /****************************** jp inbox page close *********************/
 
 /****************************** freelancer login page  *********************/
@@ -1017,7 +1039,7 @@ div[role="alertdialog"] > div {
     width: 100%;
 }
 body .MuiExpansionPanelSummary-expandIcon-330 {
-    top: 70px;
+    top: 38px;
     background-color: #ccc;
     right: 30px;
 }
@@ -1026,5 +1048,40 @@ body .MuiExpansionPanelSummary-expandIcon-330:hover {
 }
 #jobPostMainDiv .MuiCardContent-root-260 {
     padding: 0;
+    width: 100%;
+}
+.jobSearchAction {
+    padding: 0;
+    margin-top: 15px;
+}
+.jobSearchAction button {
+    background-color: gray;
+    width: 100%;
+}
+#jobPostDetailDiv li {
+    padding-right: 80px !important;
+}
+#jobPostDetailDiv li:last-child {
+    padding-right: 24px !important;
 }
 /****************************** freelancer login page close *********************/
+
+a.close-btn {
+    text-decoration: none;
+    border-radius: 50%;
+    border: 1px solid;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+    position: absolute;
+    right: 18px;
+    top: 10px;
+    font-size: 14px;
+}
+a.close-btn:hover {
+    background-color: #000000;
+    color: #fff;
+}
