@@ -16,6 +16,7 @@ import InputRange from "react-input-range";
 import Snackbar from "@material-ui/core/Snackbar";
 import SnackbarContent from "@material-ui/core/SnackbarContent";
 import Grid from "@material-ui/core/Grid";
+import Button from "@material-ui/core/Button";
 
 import FlProfile from "./FlProfile";
 import RenderJobPosts from "../../container/RenderJobPosts";
@@ -288,9 +289,14 @@ class FlDashboard extends React.Component {
 
                 {
                 errorMessage == "" ? (
-                <button onClick={this.doOnSubmit}>                    
-                    Search
-                  </button>        
+                 <Button
+                    onClick={this.doOnSubmit}
+                    variant="contained"
+                    color="primary"
+                    className={classes.button}
+                 >
+                    SEARCH
+                   </Button>                              
                 ) : null
                }                               
                 </form>

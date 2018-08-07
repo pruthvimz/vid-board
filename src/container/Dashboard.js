@@ -380,7 +380,7 @@ class Dashboard extends React.Component {
           <Redirect to={this.state.redirectTo} />
         ) : null}
 
-        <div className={classes.appFrame}>
+        <div className={classes.appFrame} id="dashboardDiv">
           <AppBar
             className={classNames(classes.appBar, {
               [classes.appBarShift]: open,
@@ -435,7 +435,7 @@ class Dashboard extends React.Component {
             <Route path = "/FlDashboard" component = {FlDashboard} />
                        */}
           </main>
-          {/*Footer
+          
           <AppBar position="static">
           <Toolbar>
             <Typography
@@ -447,7 +447,7 @@ class Dashboard extends React.Component {
               Email us at : info@vidboard.com
             </Typography>
           </Toolbar>
-          </AppBar>*/}
+          </AppBar>
           {after}
         </div>
       </div>

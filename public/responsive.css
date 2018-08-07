@@ -126,6 +126,7 @@
     }
     #jobPostDetailDiv li > div {
         flex-direction: column;
+        margin: 5px 0;
     }
     #flDashboardMainGrid {
         margin: auto;
@@ -144,10 +145,40 @@
     #jobPostDetailDiv li > div > div {
         margin: 5px 0;
     }
-    body .MuiExpansionPanelSummary-expandIcon-330 {
+    body #jobPostMainDiv > div > div > div > div:last-child[role="button"] {
         top: 25px;
         right: 15px;
         width: 30px;
         height: 30px;
     }
+    main + header h2 {
+        font-size: 13px !important;
+        padding: 0 15px !important;
+    }
+
+    body #jobPostMainDiv > div > div > div {
+        padding: 0 !important;
+    }
+
+    form#flProfileSetupForm {
+        padding: 30px 15px;
+    }
+    form#flProfileSetupForm > div {
+        width: 100%;
+        margin: auto;
+    }
+    div#flBasicProfileGrid {
+        padding: 15px;
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 50px;
+        flex-basis: 100%;
+    }
+    div#flAddProfileGrid {
+        padding: 15px;
+        width: 100% !important;
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+
 }

@@ -21,7 +21,6 @@ class RenderJobPosts extends React.Component {
         <JobPost
           key={i}
           uniqueId={i}
-          ref={jobPostRef => (this.jobPostRef = jobPostRef)}
           jobProp={jobElement}
           postFor={this.props.postFor}
         />

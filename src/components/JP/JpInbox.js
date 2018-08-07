@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import Button from "@material-ui/core/Button";
 import Icon from "@material-ui/core/Icon";
 import Grid from "@material-ui/core/Grid";
+import Typography from "@material-ui/core/Typography";
 
 import JpProfile from "./JpProfile";
 import RenderTitleCard from "../../container/RenderTitleCard";
@@ -76,6 +77,9 @@ class JpInbox extends React.Component {
             <JpProfile />
           </Grid>
           <Grid item xs={8} id="jpInboxGrid">
+            <Typography variant="headline" component="h2">
+              Inbox
+            </Typography>
             <RenderTitleCard
               flInterestProp={this.state.flData}
               ref={this.renderTitleCardRef}

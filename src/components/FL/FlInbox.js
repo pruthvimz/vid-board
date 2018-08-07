@@ -15,6 +15,7 @@ import { withStyles } from "@material-ui/core/styles";
 import { CountryDropdown, RegionDropdown } from "react-country-region-selector";
 import InputRange from "react-input-range";
 import Grid from "@material-ui/core/Grid";
+import Typography from "@material-ui/core/Typography";
 
 import FlProfile from "./FlProfile";
 import RenderJobPosts from "../../container/RenderJobPosts";
@@ -136,6 +137,9 @@ class FlInbox extends React.Component {
             <FlProfile />
           </Grid>
           <Grid item xs={8} id="flInboxGrid">
+            <Typography variant="headline" component="h2">
+              Inbox
+            </Typography>
             <RenderJobPosts
               jobPostsProp={this.state.jobPostsData}
               postFor="FlInbox"

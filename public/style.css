@@ -49,7 +49,7 @@
 }
 
 #jpJobPostFormGrid,
-#jpProfileSetupDiv{
+#jpProfileSetupDiv {
     display: flex;
     flex-wrap: wrap;
     max-width: 400px;
@@ -67,15 +67,12 @@
 
 #jpJobPostForm .tags-input{
     width: 100%;
-}
-
-#jpJobPostForm .tags-input {
-    /*margin-top: 20px;*/
+    text-align: left;
     padding: 5px;
     margin-bottom: 10px;
 
 }
-
+#flProfileSetupForm p,
 #jpJobPostForm p {
     font-size: 16px;
     margin: 16px 0 8px;
@@ -155,7 +152,7 @@ body .MuiDialog-paperWidthSm-170 {
     width: 100%;
 }
 body input[type="submit"],
-.flDashboardForm button,
+/*.flDashboardForm button,*/
 .jobSearchAction button {
     padding: 8px 15px;
     background-color: blue;
@@ -165,13 +162,19 @@ body input[type="submit"],
     cursor: pointer;
 }
 body input[type="submit"]:hover,
-.flDashboardForm button:hover,
+/*.flDashboardForm button:hover,*/
 .jobSearchAction button:hover {
     background-color: #000;
 }
+.flDashboardForm button{
+    margin: 5px auto 0;    
+    width: 50%;
+}    
 #jpProfileForm a {
     float: right;
     margin-top: 8px;
+    margin-left: 10px;
+    text-decoration: none;
 }
 #jpProfileForm a:hover {
     color: #000;
@@ -224,15 +227,16 @@ div#jpDashboardMainGrid,
 }
 body  #jpProfileViewGrid,
 body .jpProfileViewGrid,
-body #flProfileViewGrid {
+body #flProfileViewGrid,
+body .flProfileViewGrid {
     padding: 30px !important;
-    background-cofont-sizelor: #fff;
+    background-color: #fff;
     box-shadow: 0 0 5px rgba(0,0,0,.4);
     border-radius: 10px;
     height: 0%;
 }
 body #jpDashboardGrid,
-body #jpJobPostFormGrid,font-size
+body #jpJobPostFormGrid,
 body #jpInboxGrid,
 body #flInboxGrid,
 body #flDashboardGrid,
@@ -271,6 +275,8 @@ body #jpProfileMainDiv > div,
 #jobPostMainDiv .MuiDivider-root-284 {
     display: none;
 }
+#jpInboxGrid h2,
+#flInboxGrid h2,
 #jpDashboardGrid h2 {
     text-align: center;
 }
@@ -951,6 +957,7 @@ div[role="alertdialog"] > div {
 .flDashboardForm fieldset label {
     flex-direction: row;
 }
+#flProfileSetupForm p,
 #jobPostDetailDiv li > div {
     color: rgba(0, 0, 0, 0.87);
     font-size: 0.875rem;
@@ -958,8 +965,8 @@ div[role="alertdialog"] > div {
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     line-height: 1.46429em;
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    /*justify-content: space-between;*/
+    /*width: 100%;*/
 }
 /****************************** jp setup profile page close *********************/
 
@@ -999,7 +1006,7 @@ body .work_textarea {
 }
 #jobPostMainDiv button,
 #flInfoMainDiv button {
-    color: green;
+    color: white;
     display: block;
     width: 100%;
     font-size: 19px;
@@ -1025,6 +1032,7 @@ body .work_textarea {
 #FlProfileDiv p,
 #FlProfileDiv a {
     margin-top: 10px;
+    text-align: left;
 }
 #FlProfileDiv a {
     display: inline-block;
@@ -1032,21 +1040,21 @@ body .work_textarea {
 .flDashboardForm > div, .flDashboardForm > p, .flDashboardForm > fieldet {
     margin-bottom: 15px;
 }
-#jobPostMainDiv .MuiExpansionPanelDetails-root-342 {
+body #jobPostMainDiv > div > div > div:last-child > div > div > div {
     flex-direction: column;
 }
 .jobSearchMsg > div {
     width: 100%;
 }
-body .MuiExpansionPanelSummary-expandIcon-330 {
+body #jobPostMainDiv > div > div > div > div:last-child[role="button"] {
     top: 38px;
     background-color: #ccc;
     right: 30px;
 }
-body .MuiExpansionPanelSummary-expandIcon-330:hover {
-    background-color: blue;
+body #jobPostMainDiv > div > div > div > div:last-child[role="button"]:hover {
+    background-color: #bbb;
 }
-#jobPostMainDiv .MuiCardContent-root-260 {
+#jobPostMainDiv .jobSearchMsg {
     padding: 0;
     width: 100%;
 }
@@ -1065,7 +1073,9 @@ body .MuiExpansionPanelSummary-expandIcon-330:hover {
     padding-right: 24px !important;
 }
 /****************************** freelancer login page close *********************/
+.skillsChip{
 
+}
 a.close-btn {
     text-decoration: none;
     border-radius: 50%;
@@ -1084,4 +1094,76 @@ a.close-btn {
 a.close-btn:hover {
     background-color: #000000;
     color: #fff;
+}
+/*.Dashboard-appFrame-2 {*/
+#dashboardDiv {
+    flex-direction: column;
+}
+div#drawerPane {
+    position: absolute;
+}
+main + header h2 {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+body main {
+    margin-left: 0 !important;
+}
+
+/*
+#flProfileSetupForm > div > div {
+    width: 100%;
+    max-width: 100%;
+}
+
+#flProfileSetupForm > div > div {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+*/
+form#flProfileSetupForm {
+    padding: 50px 15px;
+}
+div#flBasicProfileGrid {
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    max-width: 48%;
+    margin-right: 4%;
+    flex-basis: 48%;
+}
+div#flAddProfileGrid {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    width: 48% !important;
+    max-width: 48%;
+}
+#flBasicProfileGrid div, #flBasicProfileGrid select, #flBasicProfileGrid input, #flBasicProfileGrid label {
+    width: 100%;
+    margin: 10px 0;
+}
+#flProfileSetupForm select {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+#flAddProfileGrid input, #flAddProfileGrid div, #flAddProfileGrid textarea {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: none;
+    box-sizing: border-box;
+    padding: 5px;
+}
+#flProfileSetupForm p, #flProfileSetupForm input[type="file"] {
+    display: inline-block;
+    width: auto;
+}
+#flProfileSetupForm input[type="file"] {
+    padding-left: 15px;
 }

@@ -203,7 +203,7 @@ class JobPostingForm extends React.Component {
                   id="skills"
                   value={this.state.skills}
                   pattern="^#"
-                  placeholder="+ Skills"
+                  placeholder="+ Add Skills"
                 />
 
                 
@@ -278,7 +278,7 @@ class JobPostingForm extends React.Component {
                   color="primary"
                   className={classes.button}
                 >
-                  Submit
+                  POST A JOB
                 </Button>
               </form>
           </Grid>

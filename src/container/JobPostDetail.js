@@ -9,6 +9,7 @@ import ImageIcon from "@material-ui/icons/Image";
 import WorkIcon from "@material-ui/icons/Work";
 import BeachAccessIcon from "@material-ui/icons/BeachAccess";
 import Typography from "@material-ui/core/Typography";
+import Chip from "@material-ui/core/Chip";
 
 const styles = theme => ({
   root: {
@@ -28,6 +29,14 @@ class JobPostDetail extends React.Component {
     let jobProp = this.props.jobProp;
     let budget = jobProp.min_budget + "$ - " + jobProp.max_budget + "$";
 
+    let skills;    
+    if(typeof jobProp.skills != 'undefined'){
+        skills = jobProp.skills.split(",").map((value, i) => {
+          return (
+            <Chip label={value} key={i} className="skillsChip" />
+          );
+        });
+    }
     // Can add a cross(X) button to skip
     return (
       <div className={classes.root} id="jobPostDetailDiv">
@@ -40,7 +49,7 @@ class JobPostDetail extends React.Component {
             <ListItemText primary={jobProp.description} />
           </ListItem>
           <ListItem>
-            <Typography component="p">{jobProp.skills}</Typography>
+            {skills}
           </ListItem>
           <ListItem>
           <div>

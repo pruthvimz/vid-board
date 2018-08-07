@@ -263,7 +263,7 @@ class JpProfileSetup extends React.Component {
             color="primary"
             className={classes.button}
           >
-            Submit
+            SAVE PROFILE
           </Button>
         </div>
       </Dashboard>

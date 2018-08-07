@@ -174,7 +174,7 @@ class FlProfileSetup extends React.Component {
     let success = this.validateForm();
     console.log(success);
     if (!success) return false;
-    return false; //Remove
+//    return false; //Remove
 
     let url = localStorage.getItem("BACKEND_HOST")+"/FlProfileSetup";
     let restMethod = "POST";
@@ -222,13 +222,13 @@ class FlProfileSetup extends React.Component {
           ) : null}
           <form className={classes.container} encType="multipart/form-data" id="flProfileSetupForm">
             <Grid container spacing={24}>
-              <Grid item xs={8} id="flBasicProfileGrid">                
+              <Grid item xs={6} id="flBasicProfileGrid">                
                 <TextField
                   id="name"
                   label="Name"
                   className={classes.textField}
                   value={this.state.name}
-                  placeholder="Enter Name"
+                  placeholder="Jack Bezoz"
                   onChange={this.handleText("name")}
                   margin="normal"
                 />                
@@ -243,7 +243,8 @@ class FlProfileSetup extends React.Component {
                   onChange={this.handleText("email")}
                   margin="normal"
                 />
-                                
+                 
+                <p>Upload Resume</p> 
                 <input
                   id="inputFile"
                   type="file"
@@ -272,13 +273,13 @@ class FlProfileSetup extends React.Component {
                   label="Video link"
                   className={classes.textField}
                   value={this.state.video}
-                  placeholder="Enter youtube/vimeo link"
+                  placeholder="https://www.youtube.com/AbCdEfgH"
                   onChange={this.handleText("video")}
                   margin="normal"
                 />
                                 
               </Grid>
-              <Grid item xs={4} id="flAddProfileGrid">
+              <Grid item xs={6} id="flAddProfileGrid">
                 <input
                   name="skills"
                   type="tags"
@@ -292,7 +293,7 @@ class FlProfileSetup extends React.Component {
                   className="work_textarea"
                   value={this.state.work}
                   onChange={this.handleText("work")}
-                  placeholder="work"
+                  placeholder="Work history like 1. Photographer/Videographer at Art Gallary - 2014 to present ..."
                 />
 
                 <Button
@@ -301,7 +302,7 @@ class FlProfileSetup extends React.Component {
                   color="primary"
                   className={classes.button}
                 >
-                  Save
+                  SAVE PROFILE
                 </Button>
               </Grid>
             </Grid>

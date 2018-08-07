@@ -108,7 +108,7 @@ class FlInfo extends React.Component {
                   <textarea
                     className="work_textarea"
                     defaultValue={flProp.work}
-                    disable="true"
+                    disabled
                   />
                 </Typography>
               </ListItem>

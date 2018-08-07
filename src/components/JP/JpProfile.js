@@ -67,9 +67,17 @@ class JpProfile extends React.Component {
 
   render() {
     const { classes } = this.props;
-
+    
     let jp = this.state.profileData;
-
+    
+    let looking_for;    
+    if(typeof jp.looking_for != 'undefined'){
+        looking_for = jp.looking_for.split(",").map((value, i) => {
+          return (
+            <Chip label={value} key={i} className="skillsChip" />
+          );
+        });
+    }
     return (
       <div id="jpProfileMainDiv">
         <Card className={classes.card}>
@@ -82,7 +90,7 @@ class JpProfile extends React.Component {
             ) : null}
             <Typography component="p">{jp.email}</Typography>
             <Typography component="p">Looking for&nbsp;</Typography>
-            <Chip label={jp.looking_for} />
+            {looking_for}
           </CardContent>
           <CardActions>
             {/*<Button size="large" color="primary" 

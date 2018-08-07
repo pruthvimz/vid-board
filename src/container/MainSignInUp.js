@@ -121,9 +121,9 @@ class MainSignInUp extends React.Component {
                 aria-describedby="alert-dialog-description"
               >
                 <DialogContent>
-                    <a href="javascript:void(0)" className="close-btn" onClick={this.handleClose}>        
+                    {/*<a href="javascript:void(0)" className="close-btn" onClick={this.handleClose}>        
                       X
-                    </a>
+                    </a>*/}
                     <JpLogin />
                 </DialogContent>
               </Dialog>
