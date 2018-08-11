@@ -18,7 +18,7 @@ import JpDashboard from "./JpDashboard";
 import JpProfileSetup from "./JpProfileSetup";
 import JpInbox from "./JpInbox";
 //import Logout from './Logout'
-import Auth from "../../server/auth/authUserCheck";
+import Auth from "../../container/authUserCheck";
 
 //const PrivateRoute = ({ component: Component, ...rest }) => (
 //

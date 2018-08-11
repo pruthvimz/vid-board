@@ -1106,7 +1106,7 @@ a.close-btn {
     top: 10px;
     font-size: 14px;
 }
-a.close-btn:hover {
+a.close-btn:hover {    
     background-color: #000000;
     color: #fff;
 }
@@ -1123,6 +1123,7 @@ main + header h2 {
     width: 100%;
 }
 body main {
+    z-index: 1;
     margin-left: 0 !important;
 }
 

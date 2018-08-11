@@ -44,7 +44,7 @@ import Inbox from "@material-ui/icons/Inbox";
 //import JpDashboard from "../components/JP/JpDashboard";
 //import JpInbox from "../components/JP/JpInbox";
 
-import Auth from "../server/auth/authUserCheck";
+import Auth from "./authUserCheck";
 
 const drawerWidth = 240;
 
