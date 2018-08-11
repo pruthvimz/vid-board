@@ -121,7 +121,7 @@ class FlInfo extends React.Component {
             </List>
           </CardContent>
 
-          <CardActions>
+          <CardActions className="jpInboxAction">
             {true ? (
               <Button
                 size="large"

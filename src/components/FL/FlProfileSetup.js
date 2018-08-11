@@ -200,11 +200,19 @@ class FlProfileSetup extends React.Component {
       if (xhttp.readyState == 4 && xhttp.status == 200) {
         let jsonResponse = JSON.parse(xhttp.responseText);
         console.log(jsonResponse);
+        this.handleRedirect("/FlDashboard", null);
       }
     }.bind(this);
     xhttp.send(JSON.stringify(data));
   };
 
+  handleRedirect = (pathname, state) => {
+    this.props.history.push({
+      pathname: pathname,
+      state: state
+    });
+  };
+  
   render() {
     const { country, location } = this.state;
     const { classes } = this.props;

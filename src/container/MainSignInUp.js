@@ -101,13 +101,13 @@ class MainSignInUp extends React.Component {
         
         <Grid container spacing={24} id="mainSignInUpMainGrid">
           <Grid item xs={12} id="mainSignInUpGrid">
-            {/*successMessage != 'undefined' 
+            {successMessage && successMessage != 'undefined' 
                 && successMessage != "" ? (
                   <SnackbarContent
                     className={classes.snackbar}
                     message={successMessage}
                   />
-                ) : null*/}
+                ) : null}
             <img src="corporate.jpg" alt="Snow" />
 
             <button className="btnJp" onClick={() => this.show("Jp")}>

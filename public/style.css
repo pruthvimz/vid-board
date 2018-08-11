@@ -1014,8 +1014,13 @@ body .work_textarea {
 /****************************** jp inbox page close *********************/
 
 /****************************** freelancer login page  *********************/
+#mainSignInUpGrid div[role="alertdialog"],
 .flDashboardForm div[role="alertdialog"] {
     color: green;
+    width: 100%;
+}
+.flDashboardForm div[role="alertdialog"]:nth-child(n+2) {
+    color: red;
     width: 100%;
 }
 .flDashboardForm p {
@@ -1062,10 +1067,20 @@ body #jobPostMainDiv > div > div > div > div:last-child[role="button"]:hover {
     padding: 0;
     margin-top: 15px;
 }
+
+.jpInboxAction button,
+.flInboxAction button,
 .jobSearchAction button {
     background-color: gray;
     width: 100%;
 }
+
+.jpInboxAction button:hover,
+.flInboxAction button:hover,
+.jobSearchAction button:hover {
+    background-color: #000;
+}
+
 #jobPostDetailDiv li {
     padding-right: 80px !important;
 }

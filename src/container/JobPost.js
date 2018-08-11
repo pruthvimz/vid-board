@@ -182,7 +182,7 @@ class JobPost extends React.Component {
               </List>
               <Typography component="p" />
             </CardContent>
-            <CardActions>
+            <CardActions className="flInboxAction">
               <Button size="large" color="primary">
                 {this.props.jobProp.status}
               </Button>
