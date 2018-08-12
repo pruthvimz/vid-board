@@ -80,7 +80,7 @@ class FlProfile extends React.Component {
             <Typography component="p">{fl.email}</Typography>
             <Typography component="p">{fl.location}</Typography>
             <Typography component="p">{fl.travel ? "Ready to travel" : "Dont wan't to travel"}</Typography>
-            <a target="_blank" href={fl.video}>Video link</a>
+            <a target="_blank" href={fl.video}>{fl.video}</a>
             <Typography component="p">Profile status : {fl.review}</Typography>
             <Typography component="p">
             <a target="_blank" href={fl.resume}>Download Resume</a>

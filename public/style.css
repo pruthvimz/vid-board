@@ -112,7 +112,13 @@
 #mainSignInUpGrid .btnJp:hover {
     background-color: rgba(0,0,0,0.2);
 }
-
+#email-error-text, #password-error-text, #confirmPwd-error-text {
+    color: #ff0000;
+    margin: 0;
+}
+p#password-error-text, #confirmPwd-error-text {
+    margin: 0 0 15px;
+}
 #mainSignInUpGrid .btnFl {
     width: 300px;
     height: 400px;
@@ -150,6 +156,9 @@ body .MuiDialog-paperWidthSm-170 {
 }
 #jpProfileForm div {
     width: 100%;
+}
+#popUpMsgDiv{    
+    max-width: 85%;
 }
 body input[type="submit"],
 /*.flDashboardForm button,*/
@@ -292,6 +301,9 @@ body #jobPostDetailDiv li:first-child p {
     font-size: 1.3rem;
     text-align: right;
     width: 100%;
+}
+#jobPostDetailDiv li:nth-child(3) > div:nth-child(n+2) {
+    margin: 0 0 0 10px;
 }
 /****************************** job post close  *********************/
 

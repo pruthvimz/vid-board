@@ -32,6 +32,13 @@ freelancer’s skills, work and work history, as well as a custom note
 - Job poster can see multiple freelancers interested in the job posting
 
 --------------------
+To make email functionality work
+I need to configure email to make the same accessible by Heroku to send mail.
+OR 
+You Can just fire following link to approve the Freelancer
+https://vid-board-backend.herokuapp.com/FlReview/{email}/Approved
+
+--------------------
 - To run on local server :-
 Steps : 
 1. Clone vid-board and vid-board-backend repository

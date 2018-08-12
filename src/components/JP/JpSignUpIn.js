@@ -22,11 +22,11 @@ const JpSignUpIn = ({
     <form action="/" onSubmit={onSubmit} id="jpProfileForm">        
       
        {message && message != "" ? (
-        <SnackbarContent message={message} />
+        <SnackbarContent message={message} id="popUpMsgDiv"/>
       ) : null}
 
       {successMessage && successMessage != "" ? (
-        <SnackbarContent message={successMessage} />
+        <SnackbarContent message={successMessage} id="popUpMsgDiv" />
       ) : null}
 
 
