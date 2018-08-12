@@ -305,6 +305,9 @@ body #jobPostDetailDiv li:first-child p {
 #jobPostDetailDiv li:nth-child(3) > div:nth-child(n+2) {
     margin: 0 0 0 10px;
 }
+#jobPostDetailDiv li:nth-child(4) > div > div {
+    margin: 0 10px 0 0;
+}
 /****************************** job post close  *********************/
 
 
